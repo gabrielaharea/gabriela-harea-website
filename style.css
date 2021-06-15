@@ -1,0 +1,236 @@
+@font-face {
+  font-family: "Fira-Regular-Condensed";
+  src: url("Fira_Sans_Condensed/FiraSansCondensed-Regular.ttf") format("opentype")
+}
+
+@font-face {
+  font-family: "Fira-S-R";
+  src: url("Fira_Sans/FiraSans-Light.ttf") format("opentype")
+}
+
+@font-face {
+  font-family: "Ubuntu-Light";
+  src: url("Ubuntu/Ubuntu-Light.ttf") format("opentype")
+}
+
+@font-face {
+  font-family: "Ubuntu-Regular";
+  src: url("Ubuntu/Ubuntu-Regular.ttf") format("opentype")
+}
+
+
+body {
+ color: black ;
+ padding-left: 0;
+ margin: 0;
+ padding: 0;
+ background: white;
+ }
+
+header {
+  text-align: justify ;
+  position: fixed;
+}
+
+.logo-text{
+  font: 14px/1.3 "Ubuntu-Light";
+  letter-spacing: 4px;
+  line-height: 1.3;
+  position: relative;
+  left: 35px;
+  top: 15px;
+}
+
+#menu{
+  font: 9px/5.1 "Ubuntu-Regular";
+  letter-spacing: 2px;
+  position: relative;
+  top: 44px;
+}
+
+ul {
+ list-style-type: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+/* Slide Show */
+
+.slidershow {
+  width: 1000px;
+  height: 480px;
+  overflow: hidden;
+}
+.middle {
+  position: absolute;
+  right: 0;
+  top: 0;
+ }
+
+.navigation {
+ position: absolute;
+ bottom: 20px;
+ left: 50%;
+ transform: translateX(-50%);
+ display: flex;
+}
+
+.bar {
+ width: 10px;
+ height: 10px;
+ border: 1px solid #fff;
+ margin: 10px;
+ cursor: pointer;
+ transition: 0.4s;
+}
+
+.bar:hover{
+  background: #fff;
+}
+
+input[name="r"]{
+ position: absolute;
+ visibility: hidden;
+}
+
+.slides{
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+.slide{
+  width: 20%;
+  transition: 0.4s;
+}
+
+.slide img{
+  width: 100%;
+  height: 100%;
+}
+
+#r1:checked ~ .s1{
+  margin-left: 0;
+}
+
+#r2:checked ~ .s1{
+  margin-left: -20%;
+}
+
+#r3:checked ~ .s1{
+  margin-left: -40%;
+}
+
+#r4:checked ~ .s1{
+  margin-left: -60%;
+}
+
+#r5:checked ~ .s1{
+  margin-left: -80%;
+}
+
+#r6:checked ~ .s1{
+  margin-left: -100%;
+}
+
+#r7:checked ~ .s1{
+  margin-left: -120%;
+}
+
+#r8:checked ~ .s1{
+  margin-left: -140%;
+}
+
+#r9:checked ~ .s1{
+  margin-left: -160%;
+}
+/* Slide Show  CLOSE*/
+
+.logo-text-h1{
+  font: 30px "Fira-Regular-Condensed" ;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  text-align: center;
+}
+ 
+main {
+   position: relative;
+   bottom: 90px;
+}
+
+#description{
+  font-family: 'Fira-S-R';
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  left: 100px;
+}
+
+#descriptionlight {
+  font: 16px/1.5 'Fira-S-R';
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+#description {
+  top: 700px;
+}
+
+.portrait-me {
+  border-radius: 50%;
+  height: 260px;
+}
+ 
+/* FOOTER */
+footer {
+  text-align: center;
+  font-family: 'Fira-S-R' ;
+  position: relative;
+  left: 100px;
+  top: 700px;
+}
+
+#contact {
+  display: inline-block;
+  right: 200px;
+}
+
+.contact-inline {
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.instagram{
+  height: 15px;
+  position: relative;
+  left: 165px;
+}
+
+.facebook {
+  height: 15px;
+  position: relative;
+  left: 200px;
+}
+
+.logo-mini-text {
+  text-transform: uppercase;
+  position: relative;
+  left: -40px;
+}
+
+.vigbo {
+  font-family: 'Arial', sans-serif;
+  font-size: 9px;
+  letter-spacing: 1px;
+}
+
+.gmail {
+  font-family: arial;
+  letter-spacing: 1px;
+  font-weight: lighter;
+  color: grey;
+  position: relative;
+  right: 200px;
+}
